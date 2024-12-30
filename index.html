@@ -16,7 +16,7 @@
             background-color: #1a1a1a;
             color: white;
           }
-          .instrument-selector {
+          .instrument-selector, .guide-selector {
             margin-bottom: 20px;
           }
           select {
@@ -43,6 +43,9 @@
           .key.active {
             background-color: #ffcc00;
           }
+          .key.guide {
+            background-color: #00ff00;
+          }
           .key.sharp {
             position: absolute;
             width: 8%;
@@ -52,6 +55,9 @@
           }
           .key.sharp.active {
             background-color: #ffcc00;
+          }
+          .key.sharp.guide {
+            background-color: #00ff00;
           }
           @media (max-width: 600px) {
             .key {
@@ -71,6 +77,13 @@
             <option value="guitar">Guitar</option>
             <option value="flute">Flute</option>
             <option value="piano">Piano (Classic)</option>
+          </select>
+        </div>
+        <div class="guide-selector">
+          <label for="guide">Select Guide:</label>
+          <select id="guide">
+            <option value="">None</option>
+            <option value="clair-de-la-lune">Clair de la Lune</option>
           </select>
         </div>
         <div class="keyboard">
